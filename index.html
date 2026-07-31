@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== 导航栏 ========== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">YourName</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#education">教育</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#timeline">经历</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== Hero 首屏 ========== -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">&gt; Hello, World!</p>
+            <h1 class="hero-name">你的名字</h1>
+            <div class="hero-typewriter">
+                <span class="type-prefix">物联网应用技术 / </span>
+                <span class="type-text" id="typeText"></span>
+                <span class="type-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                一名热爱技术的学生，专注于物联网、嵌入式与全栈开发的探索与实践。
+                用代码连接万物，用技术解决真实问题。
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ========== 关于我 ========== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        你好！我是<strong>你的名字</strong>，一名物联网应用技术专业的学生。
+                        我对技术充满热情，喜欢动手实践，从嵌入式硬件到 Web 前后端都有涉猎。
+                    </p>
+                    <p>
+                        在学习过程中，我注重理论与实践结合，积极参与竞赛和项目开发，
+                        不断提升自己的技术能力和解决问题的思维。
+                    </p>
+                    <p>
+                        我相信技术的发展能让人变得更自由，而我的目标是成为
+                        <span class="highlight">能用技术解决真实问题的工程师</span>。
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <span class="stat-num" data-count="3">0</span>
+                        <span class="stat-label">年在校学习</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-count="5">0</span>
+                        <span class="stat-label">项目实践</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-count="3">0</span>
+                        <span class="stat-label">竞赛获奖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 教育背景 ========== -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">教育背景</h2>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </div>
+                <div class="edu-content">
+                    <h3>你的学校名称</h3>
+                    <p class="edu-major">物联网应用技术 | 专科 / 本科</p>
+                    <p class="edu-time">2023.09 - 2026.06</p>
+                    <div class="edu-courses">
+                        <span class="course-tag">C语言程序设计</span>
+                        <span class="course-tag">嵌入式系统</span>
+                        <span class="course-tag">传感器技术</span>
+                        <span class="course-tag">计算机网络</span>
+                        <span class="course-tag">Linux系统</span>
+                        <span class="course-tag">Python编程</span>
+                        <span class="course-tag">数据库技术</span>
+                        <span class="course-tag">物联网通信协议</span>
+                    </div>
+                </div>
+                <div class="edu-gpa">
+                    <span class="gpa-label">GPA</span>
+                    <span class="gpa-value">3.8/4.0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 技能清单 ========== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">技能清单</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- 编程语言 -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">编程语言</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C / C++</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span class="skill-pct">60%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 硬件 & 嵌入式 -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">硬件 & 嵌入式</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>STM32</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Arduino</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>ESP32 / ESP8266</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>传感器 / PCB设计</span>
+                                <span class="skill-pct">65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 框架 & 工具 -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">框架 & 工具</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML / CSS</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git / GitHub</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux / Docker</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 项目经历 ========== -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">项目经历</h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-icon">&#9881;</span>
+                        <div>
+                            <h3>智能家居环境监测系统</h3>
+                            <span class="project-time">2024.03 - 2024.06</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        基于STM32和多个传感器（温湿度、光照、MQ-2）的智能家居环境监测系统，
+                        通过WiFi将数据上传至云平台，支持手机端实时查看和异常报警。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">STM32</span>
+                        <span class="tag">ESP8266</span>
+                        <span class="tag">MQTT</span>
+                        <span class="tag">传感器</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-icon">&#127760;</span>
+                        <div>
+                            <h3>物联网数据可视化平台</h3>
+                            <span class="project-time">2024.07 - 2024.10</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        基于Flask + Vue的前后端分离项目，对接MQTT消息队列，
+                        实时展示多设备传感器数据，支持历史数据查询和图表分析。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python Flask</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">ECharts</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-icon">&#128663;</span>
+                        <div>
+                            <h3>智能停车场管理系统</h3>
+                            <span class="project-time">2023.11 - 2024.01</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        基于RFID和超声波传感器的停车场管理系统，实现车辆识别、车位检测、
+                        自动计费功能，通过串口通信与上位机软件联动。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">RFID</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">串口通信</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-icon">&#129302;</span>
+                        <div>
+                            <h3>语音控制智能小车</h3>
+                            <span class="project-time">2024.09 - 2024.12</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        基于树莓派的智能小车，集成语音识别模块，支持语音指令控制运动方向、
+                        避障、巡线等功能，搭配摄像头实现实时图传。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">语音识别</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 竞赛 & 经历时间线 ========== -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">竞赛 & 经历</h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024.12</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-award">竞赛获奖</span>
+                        <h3>全国大学生物联网设计竞赛</h3>
+                        <p>获得省级二等奖，参赛项目为"基于边缘计算的智能环境监测系统"。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024.07 - 2024.09</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-intern">实习经历</span>
+                        <h3>XX科技有限公司 - 嵌入式开发实习生</h3>
+                        <p>参与公司智能硬件产品的固件开发与测试，负责传感器驱动编写和通信协议调试。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024.05</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-award">竞赛获奖</span>
+                        <h3>蓝桥杯全国软件和信息技术专业人才大赛</h3>
+                        <p>获得省级一等奖，参赛方向为嵌入式设计与开发。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023.10 - 2024.06</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-activity">社团活动</span>
+                        <h3>学校物联网创新实验室 - 核心成员</h3>
+                        <p>参与实验室日常技术交流和项目开发，组织技术分享会，指导学弟学妹完成入门项目。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023.11</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-award">竞赛获奖</span>
+                        <h3>全国大学生电子设计竞赛</h3>
+                        <p>获得省级三等奖，参赛项目为简易频率特性测试仪。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 联系方式 ========== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">联系我</h2>
+            </div>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    如果你对我的项目或经历感兴趣，欢迎通过以下方式联系我。
+                    无论是技术交流、项目合作还是实习机会，我都很乐意聊聊。
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:your-email@example.com" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 7l10 6 10-6"/>
+                        </svg>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">your-email@example.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Wang-Shuai-long" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">@Wang-Shuai-long</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                        <div>
+                            <span class="contact-label">微信</span>
+                            <span class="contact-value">扫描二维码添加</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 页脚 ========== -->
+    <footer>
+        <div class="container">
+            <p>
+                <span class="logo-bracket">&lt;</span>
+                YourName
+                <span class="logo-bracket">/&gt;</span>
+                &nbsp;&copy; 2025 | Built with HTML, CSS &amp; JavaScript
+            </p>
+            <p class="footer-sub">Designed &amp; Developed by You</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
